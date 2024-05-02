@@ -1,6 +1,6 @@
 ﻿{1,
 {4,
-{"Ganiev.PRO (v8.3.6.8 from 02 May 2024)",1,0,"",""},
+{"Ganiev.PRO (v8.3.6.9 from 02 May 2024)",1,0,"",""},
 {0,
 {"Ваши предложения по улучшению / Your suggestions for improvement",0,0,"","// Есть мысли по развитию шаблонов? Пишите на e-mail: stas@ganiev.pro или в Telegram: @stas_ganiev
 
@@ -24,6 +24,7 @@
 	//   - Блок условия с указанием выражения условия и вариантами ветвлений: ""Если="", ""If=""
 	//   - Цикл Пока с указанием выражения условия: ""Пока="", ""While=""
 	// Добавлен Возврат: ""Возв[рат]"", ""Retu[rn]""
+	// Группа ""Инструкции препроцессора"" переименована в ""Инструкции, директивы, аннотации"", добавлены шаблоны ""Инстр[укция]"" и ""Дирек[тива]""
 #КонецОбласти
 
 #Область 2024_03_06
@@ -384,8 +385,8 @@
 }
 }
 },
-{9,
-{"Инструкции препроцессору",1,0,"",""},
+{12,
+{"Инструкции, директивы, аннотации",1,0,"",""},
 {0,
 {"#Если",0,0,"#Если","#Если <?"""", ВыборВарианта, ""Клиент"", ""Клиент"", ""НаКлиенте"", ""НаКлиенте"", ""Сервер"", ""Сервер"", ""НаСервере"", ""НаСервере"", ""ВнешнееСоединение"", ""ВнешнееСоединение"" ,""ТолстыйКлиентОбычноеПриложение"", ""ТолстыйКлиентОбычноеПриложение"", ""ТолстыйКлиентУправляемоеПриложение"",""ТолстыйКлиентУправляемоеПриложение"", ""ТонкийКлиент"", ""ТонкийКлиент"", ""ВебКлиент"", ""ВебКлиент"", ""МобильноеПриложениеКлиент"", ""МобильноеПриложениеКлиент"", ""МобильноеПриложениеСервер"", ""МобильноеПриложениеСервер"", ""МобильныйКлиент"", ""МобильныйКлиент"", ""МобильныйАвтономныйСервер"", ""МобильныйАвтономныйСервер""> Тогда
 <?>
@@ -434,6 +435,17 @@
 #Иначе
 	ВызватьИсключение НСтр(""ru = 'Недопустимый вызов объекта на клиенте.'"");
 #КонецЕсли"}
+},
+{0,
+{"Инструкция препроцессора",0,0,"Инстр[укция]","#Если <?"""", ВыборВарианта, ""Клиент"", ""Клиент"", ""НаКлиенте"", ""НаКлиенте"", ""Сервер"", ""Сервер"", ""НаСервере"", ""НаСервере"", ""ВнешнееСоединение"", ""ВнешнееСоединение"" ,""ТолстыйКлиентОбычноеПриложение"", ""ТолстыйКлиентОбычноеПриложение"", ""ТолстыйКлиентУправляемоеПриложение"",""ТолстыйКлиентУправляемоеПриложение"", ""ТонкийКлиент"", ""ТонкийКлиент"", ""ВебКлиент"", ""ВебКлиент"", ""МобильноеПриложениеКлиент"", ""МобильноеПриложениеКлиент"", ""МобильноеПриложениеСервер"", ""МобильноеПриложениеСервер"", ""МобильныйКлиент"", ""МобильныйКлиент"", ""МобильныйАвтономныйСервер"", ""МобильныйАвтономныйСервер""> Тогда
+<?>
+#КонецЕсли"}
+},
+{0,
+{"Инструкция препроцессора (без условия)",0,0,"Инстр[укция]","<?"""", ВыборВарианта, ""Клиент"", ""Клиент"", ""НаКлиенте"", ""НаКлиенте"", ""Сервер"", ""Сервер"", ""НаСервере"", ""НаСервере"", ""ВнешнееСоединение"", ""ВнешнееСоединение"" ,""ТолстыйКлиентОбычноеПриложение"", ""ТолстыйКлиентОбычноеПриложение"", ""ТолстыйКлиентУправляемоеПриложение"",""ТолстыйКлиентУправляемоеПриложение"", ""ТонкийКлиент"", ""ТонкийКлиент"", ""ВебКлиент"", ""ВебКлиент"", ""МобильноеПриложениеКлиент"", ""МобильноеПриложениеКлиент"", ""МобильноеПриложениеСервер"", ""МобильноеПриложениеСервер"", ""МобильныйКлиент"", ""МобильныйКлиент"", ""МобильныйАвтономныйСервер"", ""МобильныйАвтономныйСервер"">"}
+},
+{0,
+{"Директива компиляции",0,0,"Дирек[тива]","<?"""", ВыборВарианта, ""НаКлиенте"", ""&НаКлиенте"", ""НаСервере"", ""&НаСервере"", ""НаКлиентеНаСервере (для модуля команды)"", ""&НаКлиентеНаСервере"", ""НаСервереБезКонтекста (для модуля формы)"", ""&НаСервереБезКонтекста"", ""НаКлиентеНаСервереБезКонтекста (для модуля формы)"", ""&НаКлиентеНаСервереБезКонтекста"">"}
 }
 },
 {14,
@@ -2959,8 +2971,8 @@ EndProcedure
 }
 }
 },
-{5,
-{"Preprocessor commands",1,0,"",""},
+{8,
+{"Instructions, directives, annotations",1,0,"",""},
 {0,
 {"#If",0,0,"#If","#If <?"""", VariantChoice, ""Client"", ""Client"", ""AtClient"", ""AtClient"", ""Server"", ""Server"", ""AtServer"", ""AtServer"", ""ThinClient"", ""ThinClient"", ""WebClient"", ""WebClient"", ""MobileAppClient"", ""MobileAppClient"", ""MobileAppServer"", ""MobileAppServer"", ""MobileClient"", ""MobileClient"", ""MobileStandaloneServer"", ""MobileStandaloneServer"", ""ThickClientManagedApplication"", ""ThickClientManagedApplication"", ""ThickClientOrdinaryApplication"", ""ThickClientOrdinaryApplication"", ""ExternalConnection"", ""ExternalConnection""> Then
 <?>
@@ -2987,6 +2999,17 @@ EndProcedure
 #Else
 	Raise NStr(""en = 'Invalid object call on the client.'"");
 #EndIf"}
+},
+{0,
+{"Instruction",0,0,"Instru[ction]","#If <?"""", VariantChoice, ""Client"", ""Client"", ""AtClient"", ""AtClient"", ""Server"", ""Server"", ""AtServer"", ""AtServer"", ""ThinClient"", ""ThinClient"", ""WebClient"", ""WebClient"", ""MobileAppClient"", ""MobileAppClient"", ""MobileAppServer"", ""MobileAppServer"", ""MobileClient"", ""MobileClient"", ""MobileStandaloneServer"", ""MobileStandaloneServer"", ""ThickClientManagedApplication"", ""ThickClientManagedApplication"", ""ThickClientOrdinaryApplication"", ""ThickClientOrdinaryApplication"", ""ExternalConnection"", ""ExternalConnection""> Then
+<?>
+#EndIf"}
+},
+{0,
+{"Instruction (without condition)",0,0,"Instru[ction]","<?"""", VariantChoice, ""Client"", ""Client"", ""AtClient"", ""AtClient"", ""Server"", ""Server"", ""AtServer"", ""AtServer"", ""ThinClient"", ""ThinClient"", ""WebClient"", ""WebClient"", ""MobileAppClient"", ""MobileAppClient"", ""MobileAppServer"", ""MobileAppServer"", ""MobileClient"", ""MobileClient"", ""MobileStandaloneServer"", ""MobileStandaloneServer"", ""ThickClientManagedApplication"", ""ThickClientManagedApplication"", ""ThickClientOrdinaryApplication"", ""ThickClientOrdinaryApplication"", ""ExternalConnection"", ""ExternalConnection"">"}
+},
+{0,
+{"Directive",0,0,"Direc[tive]","<?"""", VariantChoice, ""AtClient"", ""&AtClient"", ""AtServer"", ""&AtServer"", ""AtClientAtServer (command module)"", ""&AtClientAtServer"", ""AtServerNoContext (form's module)"", ""&AtServerNoContext"", ""AtClientAtServerNoContext (form's module)"", ""&AtClientAtServerNoContext"">"}
 }
 },
 {14,
